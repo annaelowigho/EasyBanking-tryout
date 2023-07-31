@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(0, 0%, 98%);
+    font-family: Arial ;
+    overflow-x: hidden;
+}
+
+.navlinks{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+    z-index: 2;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+.menu ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(185, 172, 172);
+}
+.menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: hsl(136, 65%, 51%);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li a:hover::after{
+    /* margin-top: 10px; */
+    width: 100%;
+}
+button{
+    padding: 13px;
+    width: 135px;
+    color: white;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(180, 71%, 44%));
+    border: none;
+    border-radius: 60px;
+}
+button:hover{
+    cursor: pointer;
+    background:linear-gradient(to right, hsl(136, 54%, 69%), hsl(180, 62%, 77%)); ;
+}
+.show{
+    display: none;
+}
+.hide{
+    display: none;
+}
+
+/* -------SECTION ONE---------- */
+.one{
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+.mobile{
+    display: none;
+}
+.bg-pics{
+    position: relative;
+    width: 50%;
+    /* overflow: hidden; */
+    
+}
+.phone{
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    /* top: 20px;
+    left: 20px; */
+    /* margin-left: -700px; */
+    /* top: -90px; */
+    /* left: 60px; */
+}
+.desktop{
+    object-fit: contain;
+    width: 120%;
+    position: absolute;
+    top: 0;
+    /* margin-left: -800px; */
+    /* top: -280px; */
+
+}
+.nextgen{
+    margin-top: 150px;
+    margin-left: 100px;  
+}
+.next{
+    font-size: 50px;
+    color: rgb(61, 59, 59);
+    margin-bottom: 14px;
+}
+.next-gen-p{
+    margin-bottom: 30px;
+    color: rgb(185, 172, 172);;
+}
+
+
+/* ---------BANKING OPTIONS---------- */
+.banking-options{
+    padding-top: 370px;
+}
+.options{
+    background-color: rgb(241, 239, 239);
+    padding-left: 150px;
+    padding-right: 100px;
+}
+.easybank{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.why-easy{
+    font-size: 35px;
+    margin-bottom: 16px;
+    color: rgb(61, 59, 59);
+}
+.easy-p{
+    color: rgb(146, 140, 140);
+    line-height: 23px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.row img{
+    margin-bottom: 40px;
+}
+.row h3{
+    margin-bottom: 30px;
+    color: rgb(61, 59, 59);
+}
+.row p{
+    color: rgb(146, 140, 140);
+    line-height: 20px;
+    font-size: 15px;
+}
+
+
+/* ------------ LATEST ARTICLES------------ */
+.latest-articles{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.news{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.text{
+    font-size: 40px;
+    color: rgb(61, 59, 59);
+    margin-bottom: 50px;
+}
+.articles img{
+    width: 270px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.currency, .restaurant, .planes, .confetti{
+    margin-right: 15px;
+    background-color: white;
+    width: 270px;
+    border-radius: 7px;
+}
+.currency p{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.restaurant p{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.planes p{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.confetti p{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.r-currency{
+    margin-bottom: 13px;
+    font-size: 18px;
+    color: rgb(126, 124, 124);
+    cursor: pointer;
+}
+.p-currency{
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: rgb(214, 209, 209);
+    line-height: 18px;
+}
+.claire {
+    font-size: 13px;
+    color: rgb(214, 209, 209);
+    margin-bottom: 10px;
+}
+.hutton{
+    font-size: 13px;
+    color: rgb(214, 209, 209);
+    margin-bottom: 10px;
+}
+.r-currency:hover{
+    color: hsl(136, 50%, 41%);
+}
+
+/* ------------BOTTOM--------------- */
+.bottom{
+    margin-top: 100px;
+}
+.invite{
+    background-color: rgb(22, 22, 66);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-social img{
+    padding-bottom: 40px;
+}
+.social img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.more-options{
+    display: flex;
+    color: rgb(209, 202, 202);
+    cursor: pointer;
+}
+.car:hover, .sup:hover, .pri:hover, .abt:hover, .con:hover, .blog:hover{
+    color: hsl(136, 65%, 51%);
+}
+.contact{
+    padding-right: 100px;
+}
+.contact p{
+    margin-bottom: 15px;
+}
+.support{
+    padding-left: 60px;
+}
+.support p{
+    margin-bottom: 15px;
+}
+.rights button{
+    margin-left: 50px;
+}
+.reserved{
+    margin-top: 25px;
+    color: rgb(209, 202, 202);
+}
+/**************** MEDIA QUERY ****************/
+@media (max-width: 700px){
+    .hide{
+        position: absolute;
+        background: hsl(136, 54%, 69%);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+.navlinks{
+    position: fixed;
+}
+    /* .desktop{
+        display: none;
+    }
+    .phone{
+        height: 200px;
+        margin-left: 10px;
+        top: 0;
+        left: 0;
+    }
+    .mobile{
+        display: contents;
+        width: 5px;
+        top: 0;
+        left: 0;
+        
+    }
+    .bg-pics{
+        margin-top: 20px;
+    }
+    .nextgen{
+        margin-top: 200px;
+    }
+    .one{
+        flex-direction: column;
+    } */
+   
+    .menu{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    
+    .banking-options{
+        margin-top: 300px;
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .row p{
+        margin-bottom: 20px;
+    }
+
+    .articles{
+        flex-direction: column;
+        align-items: center;
+    }
+    .news{
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .currency, .restaurant, .planes, .confetti{
+        margin-bottom: 20px;
+    }
+    .invite{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .more-options{
+        flex-direction: column;
+    }
+    .contact p{
+        margin-bottom: 5px;
+    }
+    .support{
+        padding-left: 0px;
+    }
+    .support p{
+        margin-bottom: 5px;
+    }
+}
